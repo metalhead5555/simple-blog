@@ -1,1 +1,2 @@
-# simple-blog
+# Simple Blog Example
+### Just a training project
