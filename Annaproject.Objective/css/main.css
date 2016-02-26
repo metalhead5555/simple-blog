@@ -1,0 +1,70 @@
+@font-face{
+	font-family:Light;
+	src:url(../fonts/Light.otf);
+}
+@font-face{
+	font-family:Name;
+	src:url(../fonts/Josefin.ttf);
+}
+@font-face{
+	font-family:Brand;
+	src:url(../fonts/thin.otf);
+}
+.navbar-brand{
+	font-family:"Brand";
+	font-size: 20px;
+}
+ul.navbar-nav >li{
+	font-family:"Light","Reserve";
+	font-size:14px;
+}
+body{font-family:"Light";}
+@media screen and (min-width:992px){
+	ul.navbar-nav >li:hover:not(.active) a {
+		/*padding-top:1px;*/
+ 		/*border-top:1px solid #999;*/
+		-o-transition:all 0.2s linear;
+    	-ms-transition:all 0.2s linear;
+    	-moz-transition:all 0.2s linear;
+    	-webkit-transition:all 0.2s linear;
+   		transition:all 0.2s linear;
+		/*-webkit-filter: invert(100%);*/
+		letter-spacing: 3px;
+		color:#ccc;
+	}
+	ul.navbar-nav >li:not(.active) a{
+		-o-transition:all 0.2s linear;
+    	-ms-transition:all 0.2s linear;
+    	-moz-transition:all 0.2s linear;
+    	-webkit-transition:all 0.2s linear;
+   		transition:all 0.2s linear;
+	}
+	.descr{padding-top:15%}
+}
+@media screen and (max-width:990px){
+	ul.navbar-nav >li:hover:not(.active) a{
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	}
+	.descr{padding-top:5%}
+
+}
+.alb-descr{
+	word-wrap:break-word;
+	border:1px dotted black;
+	border-width: 1px 0 1px 0;
+}
+.alb-car> .item > img {
+	margin:0 auto;
+	max-height:630px;
+}
+#btn-clps:active{
+	box-shadow: none;
+}
+.jumbotron p{font-size:14px;}
+.main{padding-top:0;}
+.pad{padding-top:20px;}
+hr{
+	border-bottom: 1px dotted black!important;
+}
+

@@ -1,0 +1,23 @@
+.jumbotron{
+	margin:0;
+	min-height:920px;
+}
+.navbar{margin-bottom:0;}
+@media screen and (min-width:767px){
+	.info{margin-top:48px;margin-bottom:0;}
+	.fixed{
+		-webkit-object-fit:cover;
+		object-fit:cover;
+		width:300px;
+	}
+	.thumbnail >img{height:250px;}
+}
+@media screen and (max-width:767px){
+	.info{margin-top:30px;margin-bottom:0;}
+	.fixed{
+		-webkit-object-fit:cover;
+		object-fit:cover;
+		width:250px;
+	}
+	.thumbnail > img{height:180px;}
+}

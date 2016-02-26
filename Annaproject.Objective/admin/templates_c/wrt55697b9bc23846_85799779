@@ -1,0 +1,61 @@
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-05-30 10:58:03
+         compiled from ".\templates\albumdelete.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2554955697b9b1af981-10722215%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '052d76ea36555213e816567fe2f603d9c89b55bf' => 
+    array (
+      0 => '.\\templates\\albumdelete.tpl',
+      1 => 1432670993,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2554955697b9b1af981-10722215',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'name' => 0,
+    'id' => 0,
+    'photo' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_55697b9baa1205_28901202',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55697b9baa1205_28901202')) {function content_55697b9baa1205_28901202($_smarty_tpl) {?><div class="row">
+	<div class="col-md-4 col-md-offset-4 alert alert-warning" style="margin-bottom:0">
+		<h5 class="text-center">Вы действительно хотите удалить <strong><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+</strong>  и его содержимое?</h5>
+	</div>
+</div>
+<form action="albumdelete.php" method="GET" class="form-horizontal">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="radio  radio-danger">
+					    <input type="radio" name="choise" id="yes" value="yes" required checked>
+					    <label for="yes">Да</label>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="radio  radio-primary">
+					    <input type="radio" name="choise" id="nope" value="no" required >
+					    <label for="nope">Нет</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block" name="enter">Подтвердить</button>
+			</div>
+		</div>
+	</div>
+	<input type="hidden" name="id" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+">
+	<input type="hidden" name="oldphoto" value="<?php echo $_smarty_tpl->tpl_vars['photo']->value;?>
+">
+</form>
+<?php }} ?>
